@@ -1,13 +1,16 @@
 /* Variables */
 :root {
   --awdwad: red;
-  --color-white: #ffffff;
-  --color-gray-light: #f9f9f9;
+  --color-white: rgba(39, 28, 28, 1);
+  --color-gray-light: rgba(152, 146, 123, 1);
   --color-gray-dark: #d9d9d9;
   --color-black: #000000;
   --color-blue: #4a90e2;
   --color-green: #7ed321;
   --color-yellow: #f5a623;
+  --color-beige:rgba(252, 238, 221, 1);
+  --color-green-black:rgba(54, 75, 57, 1);
+  --color-red-black:rgba(10, 1, 1, 1);
 
   --shadow-default: 0 2px 8px rgba(0, 0, 0, 0.1);
   --radius-default: 8px;
@@ -24,7 +27,7 @@ body {
   display: flex;
   font-family: 'Anaheim', Arial, sans-serif;
   background-color: var(--color-gray-light);
-  color: var(--color-black);
+  color: var(--color-gray-dark);
 }
 
 /* Sidebar */
@@ -70,6 +73,7 @@ body {
 .main {
   flex-grow: 1;
   padding: 20px;
+  color: var(--color-red-black);
 }
 
 header h1 {
@@ -88,12 +92,12 @@ header h1 {
   padding: 10px;
   border: 1px solid var(--color-gray-dark);
   border-radius: var(--radius-default);
-  background-color: var(--color-gray-light);
-  color: var(--color-black);
+  background-color: var(--color-green-black);
+  color: var(--color-beige);
 }
 
 .column {
-  background-color: var(--color-white);
+  background-color: var(--color-beige);
   border-radius: var(--radius-default);
   box-shadow: var(--shadow-default);
   padding: 20px;
@@ -148,8 +152,8 @@ header h1 {
   padding: 10px;
   border: none;
   border-radius: var(--radius-default);
-  background-color: var(--color-gray-dark);
-  color: var(--color-white);
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
